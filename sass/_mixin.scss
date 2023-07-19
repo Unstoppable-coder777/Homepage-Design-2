@@ -1,0 +1,23 @@
+@mixin rounded-border($px) {
+  border-radius: $px !important;
+}
+
+@mixin flex($ai, $jc, $gap) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+@mixin bgi($path) {
+  background-image: url($path);
+}
+
+@mixin main-title($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin ff($primary-font) {
+  font-family: $primary-font, sans-serif;
+}

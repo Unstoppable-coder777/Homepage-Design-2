@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practice - 2</title>
+    <!-- ====== July 6 - July 19 ======-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/swiper-bundle-8.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- ========== Header-Section ========== -->
+    <header class="header-section pt-3 vh-100 container-fluid">
+        <div class="overlay"></div>
+        <div class="video-container">
+            <video class="video-player" src="./img/videos/river.mp4" poster="./img/bg/header.png" autoplay="autoplay" muted="muted" loop="loop"></video>
+        </div>
+        <nav class="navbar rounded-80 navbar-expand-lg navbar-light bg-white container">
+            <a class="navbar-brand custom-navbar-brand">
+                <img class="img-fluid logo-desktop" src="./img/logo/Logo.svg" alt="logo">
+                <img class="img-fluid logo-mobile" src="./img/logo/Logo-white.png" alt="logo">
+            </a>
+            <button id="btn-desktop" class="navbar-toggler btn-teal rounded-80 py-2" type="button">
+                <span class="navbar-toggler-icon-2 ff-futura-demi text-capitalize d-flex gap-2 text-white">
+                    <img src="./img/svg/menu.svg" alt="menu">menu
+                </span>
+            </button>
+            <button id="btn-mobile" class="navbar-toggler btn btn-cls rounded-80 py-2" type="button">
+                <span class="navbar-toggler-icon-2 ff-futura-demi text-capitalize d-flex gap-2 text-white">
+                    <img src="./img/svg/close.svg" alt="">close
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-center">
+                <ul class="navbar-nav ff-futura-medium">
+                    <li class="nav-item"><a href="#" class="nav-link text-dark mx-1 text-capitalize">our river</a></li>
+                    <li class="nav-item drop-down-menu"><a href="#" class="nav-link text-dark mx-1 text-capitalize project">our project</a>
+                        <ul class="dropdown d-flex flex-column align-items-center justify-content-center">
+                            <li class="drop-down-list mt-4 w-100">
+                                <a id="top-radius" href="#" class="nav-link d-flex flex-column text-start w-100 text-capitalize ff-futura-demi">
+                                    <div class="top-part text-dark d-flex align-items-center w-100 justify-content-start gap-2">
+                                        <img src="./img/svg/information-variant-circle.svg" alt="">about the project
+                                    </div>
+                                    <p class="bottom-part pt-1 ff-futura-light fw-bold text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+                                </a>
+                            </li>
+                            <li class="drop-down-list w-100">
+                                <a href="#" class="nav-link d-flex flex-column text-start w-100 text-capitalize ff-futura-demi">
+                                    <div class="top-part text-dark d-flex align-items-center w-100 justify-content-start gap-2">
+                                        <img src="./img/svg/bullseye-arrow.svg" alt="">our aims
+                                    </div>
+                                    <p class="bottom-part pt-1 ff-futura-light fw-bold text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+                                </a>
+                            </li>
+                            <li class="drop-down-list w-100">
+                                <a href="#" class="nav-link d-flex flex-column text-start w-100 text-capitalize ff-futura-demi">
+                                    <div class="top-part text-dark d-flex align-items-center w-100 justify-content-start gap-2">
+                                        <img src="./img/svg/magnify-expand.svg" alt="">research
+                                    </div>
+                                    <p class="bottom-part pt-1 ff-futura-light fw-bold text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+                                </a>
+                            </li>
+                            <li class="drop-down-list w-100">
+                                <a href="#" class="nav-link d-flex flex-column text-start w-100 text-capitalize ff-futura-demi">
+                                    <div class="top-part text-dark d-flex align-items-center w-100 justify-content-start gap-2">
+                                        <img src="./img/svg/shield-home.svg" alt="">biosecurity
+                                    </div>
+                                    <p class="bottom-part pt-1 ff-futura-light fw-bold text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+                                </a>
+                            </li>
+                            <li class="drop-down-list w-100">
+                                <a id="bottom-radius" href="#" class="nav-link d-flex flex-column text-start w-100 text-capitalize ff-futura-demi">
+                                    <div class="top-part text-dark d-flex align-items-center w-100 justify-content-start gap-2">
+                                        <img src="./img/svg/book-open-page-variant.svg" alt="">resources
+                                    </div>
+                                    <p class="bottom-part pt-1 ff-futura-light fw-bold text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark mx-1 text-capitalize">our team</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark mx-1 text-capitalize">news & events</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark mx-1 text-capitalize">contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark mx-1 px-3 btn btn-teal rounded-80 text-white text-capitalize">get involved</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container text-center text-content myContainer">
+            <div class="row flex-column">
+                <div class="col">
+                    <h2 class="text-capitalize text-white custom-style ff-futura-demi main-title">revive. revitalise. restore.</h2>
+                </div>
+                <div class="col-lg-9 col-md-11 col-12 mx-auto">
+                    <p class="text-white ff-futura-light custom-text-1 mx-auto">The LIFE R4ever Kent project is dedicated to the River Kent from it’s headwaters around Kentmere to the mouth of Morcambe Bay and everything in between.</p>
+                    <div class="custom-btn-group d-flex flex-column align-items-center">
+                        <button class="btn btn-teal rounded-80 custom-fs ff-futura-medium text-capitalize text-white">Learn about our river</button>
+                        <button class="btn btn-dark rounded-80 text-capitalize ff-futura-demi" id="watch_video">
+                            <img src="./img/logo/play-circle.png" alt="play-btn-logo">watch video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-learn-more text-center">
+            <div class="small-wave-svg">
+                <svg width="47" height="11" viewBox="0 0 47 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.5 4H45.046C43.0823 4 41.1714 4.72506 39.6936 6.01811V6.01811C36.5092 8.80443 31.6751 8.67509 28.6831 5.68313V5.68313C25.5444 2.54443 20.4556 2.54443 17.3169 5.68313V5.68313C14.3249 8.67509 9.52559 8.83489 6.34124 6.04858L6.25773 5.97551C4.80225 4.70197 2.93399 4 1 4V4" stroke="#CCEBEE" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+            <a class="text-uppercase text-decoration-none" href="#">scroll to learn more</a>
+        </div>
+    </header>
+
+    <!-- ========== Navbar For Tablet, Mobile ========== -->
+    <header class="mobile-version-navbar">
+        <nav class="mobile-nav">
+            <a href="#" id="main-menu" class="submenu-close in-submenu ff-futura-demi fs-5 nav-link d-flex align-items-center justify-content-md-center gap-2 display-6 text-light text-capitalize">
+                <img src="./img/svg/chevron-right-circle.svg" id="submenu-close-toggler" alt="">main menu
+            </a>
+            <ul class="ff-futura-demi mt-sm-5 pt-sm-5 mt-4 pt-3">
+                <li class="nav-item not-in-submenu"><a href="#" class="nav-link display-6 text-light text-capitalize">our river</a></li>
+                <li class="nav-item not-in-submenu">
+                    <a href="#" class="nav-link d-flex align-items-center justify-content-md-center gap-3 display-6 text-light text-capitalize">our project
+                    <img src="./img/svg/chevron-right-circle.svg" id="submenu-toggler" alt="">
+                </a>
+                </li>
+                <li class="nav-item not-in-submenu"><a href="#" class="nav-link display-6 text-light text-capitalize">our team</a></li>
+                <li class="nav-item not-in-submenu"><a href="#" class="nav-link display-6 text-light text-capitalize">news & events</a></li>
+                <li class="nav-item not-in-submenu"><a href="#" class="nav-link display-6 text-light text-capitalize">contact</a></li>
+                <li class="nav-item not-in-submenu btn-center">
+                    <a href="#" class="nav-link text-light px-3 btn btn-teal rounded-80 text-white text-capitalize">get involved</a>
+                </li>
+                <!-- ========== Sub-Menu ========== -->
+                <li class="nav-item in-submenu opacity-effect"><a href="#" class="nav-link display-6 text-light text-capitalize">our aims</a></li>
+                <li class="nav-item in-submenu opacity-effect"><a href="#" class="nav-link display-6 text-light text-capitalize">our research</a>
+                </li>
+                <li class="nav-item in-submenu opacity-effect"><a href="#" class="nav-link display-6 text-light text-capitalize">biosecurity</a></li>
+                <li class="nav-item in-submenu opacity-effect"><a href="#" class="nav-link display-6 text-light text-capitalize">resources</a></li>
+                <li class="nav-item in-submenu opacity-effect"><a href="#" class="nav-link display-6 text-light text-capitalize">contact</a></li>
+                <!-- ========== End Sub-Menu ========== -->
+            </ul>
+        </nav>
+    </header>
+    <!-- ========== End Navbar For Tablet, Mobile ========== -->
+    <!-- ========== End Header-Section ========== -->
+    <section class="for-line">
+        <!-- ========== About-Section ========== -->
+        <section class="container about-section">
+            <div class="row">
+                <div class="col-lg-8 col-12 py-2 mx-auto">
+                    <div class="about-title text-center">
+                        <h1 class="display-1 fw-bold ff-futura-demi">About the <span class="text-teal">project</span> </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-12 py-2 text-center">
+                    <div class="about-paragraph">
+                        <p class="fs-5 fw-bold ff-futura-light">The LIFE R4ever Kent project was established in 2021 and runs for 5 years.</p>
+                        <p class="fs-5 fw-bold ff-futura-light">Nestled in the breath-taking landscape of South Cumbria, in the Lake District National Park the River Kent winds its way from headwaters around Kentmere and flows through Kendal to meet the sea in Morcambe Bay.</p>
+                        <p class="fs-5 fw-bold ff-futura-light">Held dear by residents for its nature, the project aims to Restore and Revitalise this majestic river system, ensuring it is Resilient to current pressures and future changes.</p>
+                    </div>
+                    <button class="btn btn-outline-primary ff-futura-demi rounded-80 d-flex align-items-center gap-3 mx-auto custom-hover">Learn more about the project
+                        <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End About-Section ========== -->
+    
+        <!-- ========== Gallery-Slider-Section ========== -->
+        <section class="gallery-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="swiper mySwiper gallery-slider-container">
+                            <div class="swiper-wrapper gallery-wrapper">
+                                <div class="gallery-slide swiper-slide"><img src="./img/jpg/1.jpg" alt="" loading="lazy"></div>
+                                <div class="gallery-slide swiper-slide"><img src="./img/jpg/2.jpg" alt="" loading="lazy"></div>
+                                <div class="gallery-slide swiper-slide"><img src="./img/jpg/3.jpg" alt="" loading="lazy"></div>
+                                <div class="gallery-slide swiper-slide"><img src="./img/jpg/4.jpg" alt="" loading="lazy"></div>
+                                <div class="gallery-slide swiper-slide"><img src="./img/jpg/5.jpg" alt="" loading="lazy"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Gallery-Slider-Section ========== -->
+    
+        <!-- ========== Info-Section ========== -->
+        <section class="info-section my-lg-5 mt-0 mb-md-5 my-1 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-for-desktop mb-5 pb-5">
+                        <div class="numeric-info d-flex align-items-center justify-content-around">
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">5 years</h1>
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">15.75 km</h1>
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">4000</h1>
+                        </div>
+                        <div class="py-lg-2 py-md-1 py-1 alphabetic-info d-flex align-items-center justify-content-between gap-lg-5 gap-md-4 gap-2">
+                            <p class="w-100 text-teal-2 fw-bold fs-5 text-center ff-futura-light">of dedication to the River Kent</p>
+                            <p class="w-100 text-teal-2 fw-bold fs-5 text-center ff-futura-light">of habitat restoration</p>
+                            <p class="w-100 text-teal-2 fw-bold fs-5 text-center ff-futura-light">mussels released into the wild</p>
+                        </div>
+                    </div>
+                    <div class="col col-for-tablet mt-0 mb-5 py-5">
+                        <div class="numeric-info d-flex align-items-center justify-content-around">
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">5 years</h1>
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">20 miles</h1>
+                        </div>
+                        <div class="py-lg-2 py-md-1 py-1 alphabetic-info d-flex align-items-center justify-content-between gap-lg-5 gap-md-4 gap-2">
+                            <p class="w-100 text-teal-2 fw-bold text-center ff-futura-light">of dedication to the River Kent</p>
+                            <p class="w-100 text-teal-2 fw-bold text-center ff-futura-light">of water systems</p>
+                        </div>
+                    </div>
+                    <div class="col col-for-mobile mt-0 mb-5 py-5">
+                        <div class="numeric-info d-flex align-items-center flex-column">
+                            <h1 class="display-1 ff-futura-demi fw-bold text-teal">5 years</h1>
+                            <p class="w-100 text-teal-2 fw-bold text-center ff-futura-light">of dedication to the River Kent</p>
+                            <h1 class="display-1 mt-5 ff-futura-demi fw-bold text-teal">20 miles</h1>
+                            <p class="w-100 text-teal-2 fw-bold text-center ff-futura-light">of water systems</p>
+                        </div>
+                        <div class="py-lg-2 py-md-1 py-1 alphabetic-info d-flex align-items-center justify-content-between gap-lg-5 gap-md-4 gap-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Info-Section ========== -->
+    </section>
+
+    <!-- ========== Hero-Section ========== -->
+    <section class="hero-section-slider bg-teal-2 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-box text-center py-5">
+                        <h1 class="text-white text-capitalize display-1 fw-bold ff-futura-demi">our river</h1>
+                        <p class="text-white ff-futura-light fw-bold fs-4">The LIFE R4EVER Kent project was established in 2021 and rules for 5 years.</p>
+                        <div class="custom-btn-group mt-lg-5 mt-md-4 mt-3 py-2 d-flex flex-md-row flex-column align-items-center justify-content-center gap-lg-5 gap-4">
+                            <button class="btn btn-outline-light py-3 px-4 ff-futura-demi rounded-80 d-flex align-items-center gap-3 custom-hover">About the River Kent
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline-light py-3 px-4 ff-futura-demi rounded-80 d-flex align-items-center gap-3 custom-hover">Species we protect
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper-2 gallery-slider-container-2">
+                        <div class="swiper-wrapper gallery-wrapper">
+                            <div class="gallery-slide swiper-slide"><img src="./img/jpg/1.jpg" alt="" loading="lazy"></div>
+                            <div class="gallery-slide swiper-slide"><img src="./img/jpg/2.jpg" alt="" loading="lazy"></div>
+                            <div class="gallery-slide swiper-slide"><img src="./img/jpg/3.jpg" alt="" loading="lazy"></div>
+                            <div class="gallery-slide swiper-slide"><img src="./img/jpg/4.jpg" alt="" loading="lazy"></div>
+                            <div class="gallery-slide swiper-slide"><img src="./img/jpg/5.jpg" alt="" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Hero-Section ========== -->
+
+    <!-- ========== Hero-Banner-Section ========== -->
+    <section class="hero-banner-section py-5">
+        <div class="container py-5 bg-teal shadow">
+            <div class="row py-5">
+                <div class="col py-5 text-center">
+                    <div class="content-box d-flex flex-column gap-3">
+                        <h1 class="display-4 ff-futura-demi text-white">Make an impact, become a volunteer</h1>
+                        <button class="btn btn-light mx-auto text-teal py-3 px-4 ff-futura-demi rounded-80 d-flex align-items-center gap-3 custom-hover">Get involved
+                            <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Hero-Banner-Section ========== -->
+
+    <!-- ========== Card-Section ========== -->
+    <section class="card-section pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col">
+                    <div class="heading-box py-3 d-flex flex-md-row flex-column align-items-center justify-content-between py-2 px-1">
+                        <h1 class="card-title ff-futura-demi display-4 fw-bold text-dark">What's going on</h1>
+                        <div class="custom-btn-group btn-custom-secondary rounded-80 py-1 px-1 my-lg-0 my-md-0 my-4">
+                            <button class="btn ff-futura-demi btn-white bg-white rounded-80 py-2 px-4 text-capitalize">news</button>
+                            <button class="btn ff-futura-demi btn-custom-secondary rounded-80 py-2 px-4 text-capitalize">events</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2 card-section-for-desktop">
+                <div class="col card-group gap-lg-2 gap-md-2 gap-1 flex-md-nowrap flex-wrap w-100 row d-flex justify-content-md-center">
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/1.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/2.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/3.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/4.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2 card-section-for-tablet">
+                <div class="col card-group gap-md-3 gap-1 w-100 row d-flex justify-content-center">
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/1.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/2.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-group gap-md-3 gap-1 mt-md-1 mt-0 w-100 row d-flex justify-content-center">
+                    <div class="card p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/3.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/4.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2 swiper card-swiper card-section-for-mobile">
+                <div class="col gap-md-3 gap-1 flex-md-nowrap flex-wrap swiper-wrapper w-100 row d-flex justify-content-md-center">
+                    <div class="card col-sm-8 col-8 p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/1.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card col-sm-8 col-8 p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/2.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card col-sm-8 col-8 p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/3.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card col-sm-8 col-8 p-3 swiper-slide">
+                        <div class="card-img-box">
+                            <img src="./img/jpg/4.jpg" alt="" class="card-img-top img-fluid-2 rounded-3">
+                        </div>
+                        <div class="card-body px-0">
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-between gap-2 rounded-80 text-capitalize ff-futura-demi fs-6">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.73597 11.09H4.40985V9.85396H8.73597M10.59 8.61792H4.40985V7.38189H10.59M10.59 6.14585H4.40985V4.90982H10.59M11.8261 2.43774H3.17381C2.48781 2.43774 1.93777 2.98778 1.93777 3.67378V12.326C1.93777 12.6538 2.068 12.9682 2.2998 13.2C2.5316 13.4318 2.84599 13.5621 3.17381 13.5621H11.8261C12.1539 13.5621 12.4683 13.4318 12.7001 13.2C12.9319 12.9682 13.0621 12.6538 13.0621 12.326V3.67378C13.0621 2.98778 12.5059 2.43774 11.8261 2.43774Z" fill="currentColor"/>
+                                </svg>                                        
+                                news article</button>
+                            <h2 class="card-title fs-5 ff-futura-medium fw-light py-3">Lorem ipsum dolor sit amet consectetur. Magna dui ut tellus ornare volutpat et.</h2>
+                            <button class="btn text-teal py-1 pe-1 ps-1 ff-futura-demi d-flex align-items-center gap-3 custom-hover">Read more
+                                <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col">
+                    <button class="btn btn-outline-primary py-2 px-3 ff-futura-demi rounded-80 d-flex align-items-center justify-content-center gap-2 mx-auto custom-hover">View all articles
+                        <svg class="goto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 8C15.5 9.98912 14.7098 11.8968 13.3033 13.3033C11.8968 14.7098 9.98912 15.5 8 15.5C7.01508 15.5 6.03981 15.306 5.12987 14.9291C4.21993 14.5522 3.39314 13.9997 2.6967 13.3033C1.29018 11.8968 0.5 9.98912 0.5 8C0.5 6.01088 1.29018 4.10322 2.6967 2.6967C4.10322 1.29018 6.01088 0.5 8 0.5C8.98491 0.5 9.96018 0.693993 10.8701 1.0709C11.7801 1.44781 12.6069 2.00026 13.3033 2.6967C13.9997 3.39314 14.5522 4.21993 14.9291 5.12987C15.306 6.03981 15.5 7.01508 15.5 8ZM6.5 12.5L11 8L6.5 3.5L5.45 4.55L8.9 8L5.45 11.45L6.5 12.5Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Card-Section ========== -->
+    <!-- ========== Footer-Section ========== -->
+    <footer class="footer-section desktop-version">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 align-items-center align-items-lg-start logo-box d-flex flex-column flex-column gap-2">
+                    <div class="brand-logo">
+                        <a href="#"><img src="./img/png/Logo.png" alt=""></a>
+                    </div>
+                    <div class="social-logos d-flex gap-3">
+                        <a href="#"><img src="./img/png/_Facebook.png" alt=""></a>
+                        <a href="#"><img src="./img/png/_Twitter.png" alt=""></a>
+                        <a href="#"><img src="./img/png/_Instagram.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-3 nav-box d-lg-flex d-none flex-column align-items-start gap-4 text-capitalize">
+                    <a class="ms-5 ff-futura-demi fs-5 text-dark text-decoration-none" href="#">our river</a>
+                    <a class="ms-5 ff-futura-demi fs-5 text-dark text-decoration-none" href="#">our team</a>
+                    <a class="ms-5 ff-futura-demi fs-5 text-dark text-decoration-none" href="#">news & events</a>
+                    <a class="ms-5 ff-futura-demi fs-5 text-dark text-decoration-none" href="#">get involved</a>
+                </div>
+                <div class="ms-auto col-3 subnav-box d-lg-flex d-none flex-column align-items-start gap-4 text-capitalize">
+                    <a class="ff-futura-demi fs-5 text-dark text-decoration-none" href="#">our project</a>
+                    <a class="ff-futura-demi fs-5 text-dark text-decoration-none" href="#">our aims</a>
+                    <a class="ff-futura-demi fs-5 text-dark text-decoration-none" href="#">research</a>
+                    <a class="ff-futura-demi fs-5 text-dark text-decoration-none" href="#">biosecurity</a>
+                    <a class="ff-futura-demi fs-5 text-dark text-decoration-none" href="#">resources</a>
+                </div>
+                <div class="ms-auto p-0 py-lg-0 py-3 px-lg-0 px-3 col-lg-3 contact-box d-flex flex-column align-items-start">
+                    <button class="d-lg-block d-none btn btn-teal custom-py-px rounded-80 text-white text-capitalize ff-futura-demi fs-4">contact us</button>
+                    <div class="w-100 info-box-1 my-4">
+                        <h5 class="ff-futura-demi text-capitalize">project name and reference</h5>
+                        <p class="ff-futura-light fw-bold fs-5">LIFE R4ever Kent LIFE20 NAT/UK/001013</p>
+                    </div>
+                    <div class="w-100 info-box-2">
+                        <h5 class="ff-futura-demi text-capitalize">Funder recognition</h5>
+                        <p class="ff-futura-light fw-bold fs-5">The Project is financially supported by LIFE,A financial instrument Of the European Commission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between py-lg-5 py-4">
+                <div class="col-lg-6 order-lg-0 order-2 d-flex align-items-center justify-content-center py-lg-0 py-3">
+                    <div class="policy-box d-flex align-items-center justify-content-lg-start justify-content-center w-100 flex-lg-nowrap flex-wrap gap-lg-0 gap-3">
+                        <a href="#" class="px-2 text-capitalize text-decoration-none text-secondary">Terms & Conditions</a>
+                        <a href="#" class="px-2 text-capitalize text-decoration-none text-secondary">privacy policy</a>
+                        <a href="#" class="px-2 text-capitalize text-decoration-none text-secondary">accessibility statement</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 d-flex align-items-center justify-content-center">
+                    <div class="partner-box w-100 d-flex align-items-center justify-content-lg-between justify-content-center flex-lg-nowrap flex-wrap gap-lg-3 gap-sm-4 gap-5">
+                        <figure><img class="img-fluid" src="./img/partners/SCRT Logo NEW blue text 1.png" alt=""></figure>
+                        <figure><img class="img-fluid" src="./img/partners/SCRT Logo NEW blue text 2.png" alt=""></figure>
+                        <figure><img class="img-fluid" src="./img/partners/SCRT Logo NEW blue text 3.png" alt=""></figure>
+                        <figure><img class="img-fluid" src="./img/partners/FBA logo Jan 23 1.png" alt=""></figure>
+                        <figure><img class="img-fluid" src="./img/partners/EA_logo_354 1.png" alt=""></figure>
+                        <figure><img class="img-fluid" src="./img/partners/NatEng_logo_New Green 1.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-lightblue">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="copyright py-3 w-100 d-flex align-items-center justify-content-lg-between justify-content-around gap-lg-0 gap-3 flex-lg-nowrap flex-wrap">
+                            <p class="ff-futura-light fw-bold fs-5 my-auto mx-lg-0">&copy;&nbsp;LifeR4Ever Kent 2023</p>
+                            <p class="ff-futura-light fw-bold fs-5 my-auto mx-lg-0">Website by <span class="ff-futura-demi">AY.Studio</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Footer-Section ========== -->
+
+    <script src="./js/swiper-bundle-8.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            speed: 1400,
+            spaceBetween: 45,
+            breakpoints: {
+                1024: {
+                    slidesPerView: "auto",
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        var swiper1 = new Swiper(".mySwiper-2", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            speed: 1400,
+            spaceBetween: 45,
+            breakpoints: {
+                1024: {
+                    slidesPerView: "auto",
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        var init = false;
+        var swiper2;
+        function swiperCard() {
+            if (window.innerWidth <= 768) {
+                if (!init) {
+                init = true;
+                swiper2 = new Swiper(".card-swiper", {
+                    direction: "horizontal",
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    grabCursor:true,
+                    spaceBetween: 10,
+                    autoplay:{
+                        delay:4000,
+                        disableOnInteraction:false,
+                    },
+                });
+                }
+            } else if (init) {
+                swiper.destroy();
+                init = false;
+            }
+        }
+        swiperCard();
+        window.addEventListener("resize", swiperCard);
+
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
